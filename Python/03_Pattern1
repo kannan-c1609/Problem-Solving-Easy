@@ -1,0 +1,16 @@
+def patterPrint(n):
+	# outer loop to handle number of rows
+	for i in range(n+1):
+		# inner loop to handle number of columns
+		for j in range(i):
+			# printing stars
+			print("*",end="")
+		# ending line after each row
+		print('')
+# Driver Code
+n = input()
+n = int(n)
+if n>0:
+    patterPrint(n)
+else:
+    print("Invalid input")
